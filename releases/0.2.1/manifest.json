@@ -1,0 +1,84 @@
+{
+  "manifest_schema": 1,
+  "script_version": "0.2.1",
+  "channel": "stable",
+  "created_at": "2026-08-24T21:44:07Z",
+  "archive": "scripts.tar.gz",
+  "archive_sha256": "c4b1b8a478566d22c68764a199409fd5a40c3bcff4f34a1d90c461d834c0130e",
+  "requires": {
+    "architecture": "x86_64",
+    "update_api": 1,
+    "system": {
+      "min_inclusive": "0.2.0",
+      "max_exclusive": "0.3.0"
+    },
+    "bootstrap": {
+      "min_inclusive": "1.0.0",
+      "max_exclusive": "2.0.0"
+    },
+    "config_schema": {
+      "min": 1,
+      "max": 1
+    },
+    "capabilities": [
+      "script-update-v1",
+      "script-rollback-v1",
+      "signed-updates-v1"
+    ]
+  },
+  "runtime_requirements": {
+    "packages": [
+      "bash",
+      "networkmanager",
+      "bluez",
+      "bluez-utils"
+    ],
+    "commands": [
+      "bash",
+      "systemctl",
+      "nm-online"
+    ]
+  },
+  "files": [
+    {
+      "path": "01-preflight-copy.sh",
+      "sha256": "db6290b3865f4909bd5f60db386b43aa2a1862861fc081f2d49363d0491bb8cc",
+      "mode": "0755"
+    },
+    {
+      "path": "02-postinstall-test.sh",
+      "sha256": "0200139b6045860228be0c834a7c0c0e8a27530d0c50c1aea4eab051b6d879d3",
+      "mode": "0755"
+    },
+    {
+      "path": "03-postinstall-setup.sh",
+      "sha256": "a8ed72d726ff6552f44cb38919a2c57cfb24741974aaae47cd14e754619a73c6",
+      "mode": "0755"
+    },
+    {
+      "path": "custom-dialogrc",
+      "sha256": "0de7ae4e3a7a139c510c422ddebccdafe19395868c9030ad40dbafad13b43cb7",
+      "mode": "0644"
+    },
+    {
+      "path": "custom-git.sh",
+      "sha256": "f5efba0b5be8268e131ced5e51e57a454e610335ecff928a15c5987c2bc0cf81",
+      "mode": "0755"
+    },
+    {
+      "path": "custom-linux-menu.sh",
+      "sha256": "c219eb93068ecb0673c91b04aa7c0aa1c6007907fe14d9f9b787f040bc572073",
+      "mode": "0755"
+    },
+    {
+      "path": "save-archinstall-config.sh",
+      "sha256": "f0f00b880bf2c7bfbcd69a4cc0d3022c74e8414b21011b846ebfbdc4cae5a5b1",
+      "mode": "0755"
+    },
+    {
+      "path": "start-archinstall.sh",
+      "sha256": "10b57252f99eb31a53b4404bc8daad007efc3ecb5fe1723e7859983ec9437f04",
+      "mode": "0755"
+    }
+  ]
+}
