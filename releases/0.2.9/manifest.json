@@ -1,0 +1,106 @@
+{
+  "manifest_schema": 1,
+  "script_version": "0.2.9",
+  "channel": "stable",
+  "created_at": "2026-09-06T13:27:59Z",
+  "archive": "scripts.tar.gz",
+  "archive_sha256": "9baad59571d04b655ed7c75ed09bd9f9f370b0c630a1f6cbfe558310f7853fdc",
+  "requires": {
+    "architecture": "x86_64",
+    "update_api": 1,
+    "system": {
+      "min_inclusive": "0.2.0",
+      "max_exclusive": "0.3.0"
+    },
+    "bootstrap": {
+      "min_inclusive": "1.0.0",
+      "max_exclusive": "2.0.0"
+    },
+    "config_schema": {
+      "min": 1,
+      "max": 1
+    },
+    "capabilities": [
+      "script-update-v1",
+      "script-rollback-v1",
+      "signed-updates-v1"
+    ]
+  },
+  "runtime_requirements": {
+    "packages": [
+      "bash",
+      "networkmanager",
+      "bluez",
+      "bluez-utils",
+      "dialog"
+    ],
+    "commands": [
+      "bash",
+      "systemctl",
+      "nm-online",
+      "dialog"
+    ]
+  },
+  "files": [
+    {
+      "path": "01-preflight-copy.sh",
+      "sha256": "db6290b3865f4909bd5f60db386b43aa2a1862861fc081f2d49363d0491bb8cc",
+      "mode": "0755"
+    },
+    {
+      "path": "02-postinstall-test.sh",
+      "sha256": "e79ef8aeec1dc349b70650346dd618eaa95a6b55117ed44bcdf03cfb3a2e3986",
+      "mode": "0755"
+    },
+    {
+      "path": "03-postinstall-setup.sh",
+      "sha256": "c2c9b3329bbefbb0e782bccdc13272d63e4bac9c4a0c0f8dbf4ec7fc3ab8fa50",
+      "mode": "0755"
+    },
+    {
+      "path": "04-optional-software-setup.sh",
+      "sha256": "ca1e7fdb2616b90f7a538def29205d03ed0d20e44424565a9e649f47fa2a802b",
+      "mode": "0755"
+    },
+    {
+      "path": "05-keyboard-layout-setup.sh",
+      "sha256": "2ad8118cda5777bce780eb7a3ffd75c0d9f8bb365cdf4499c1ca23b111df3ceb",
+      "mode": "0755"
+    },
+    {
+      "path": "06-tool-overview-setup.sh",
+      "sha256": "8145d5a934b8eebaa5088086ea49a09e38be769bde4f8714bf32e644d2353626",
+      "mode": "0755"
+    },
+    {
+      "path": "custom-dialogrc",
+      "sha256": "0de7ae4e3a7a139c510c422ddebccdafe19395868c9030ad40dbafad13b43cb7",
+      "mode": "0644"
+    },
+    {
+      "path": "custom-git.sh",
+      "sha256": "912c0b7e29b6c19e9203c90c27db83e9a66f3f7c123c360c1d7f931536b826de",
+      "mode": "0755"
+    },
+    {
+      "path": "custom-linux-menu.sh",
+      "sha256": "d9aa8af7efe7a911bb931c6f5b1dce23a05615070b8a8c3cb3f7a467495449c1",
+      "mode": "0755"
+    },
+    {
+      "path": "custom-update.sh",
+      "sha256": "d9f58bd433a7836fdc19c384696bb9be2c95a0c5b5677c67331b2667415363d8",
+      "mode": "0755"
+    },
+    {
+      "path": "save-archinstall-config.sh",
+      "sha256": "f0f00b880bf2c7bfbcd69a4cc0d3022c74e8414b21011b846ebfbdc4cae5a5b1",
+      "mode": "0755"
+    },
+    {
+      "path": "start-archinstall.sh",
+      "sha256": "7f17ed75317194ae370999a8a50eefcbc15ac5e4c42e43728b8b24d60572e9e0",
+      "mode": "0755"
+    }
+  ]
+}
