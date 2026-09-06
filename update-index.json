@@ -1,8 +1,12 @@
 {
   "index_schema": 1,
-  "generated_at": "2026-09-06T13:27:59Z",
+  "generated_at": "2026-09-06T22:34:32Z",
   "channels": {
     "stable": [
+      {
+        "version": "0.2.10",
+        "manifest": "releases/0.2.10/manifest.json"
+      },
       {
         "version": "0.2.9",
         "manifest": "releases/0.2.9/manifest.json"
